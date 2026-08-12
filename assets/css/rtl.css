@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Apex Plumbing - RTL Stylesheet
+   Applied when [dir="rtl"] is set on <html> or <body>
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .skip-link {
+  left: auto;
+  right: 20px;
+}
+
+/* Header & Nav */
+[dir="rtl"] .site-logo {
+  flex-direction: row;
+}
+
+[dir="rtl"] .logo-icon::after {
+  right: auto;
+  left: 0;
+  border-radius: 0 50% 0 0;
+}
+
+[dir="rtl"] .mobile-drawer {
+  right: auto;
+  left: -100%;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
+  transition: left var(--transition-normal);
+}
+
+[dir="rtl"] .mobile-drawer.open {
+  right: auto;
+  left: 0;
+}
+
+/* Arrows and icons mirroring */
+[dir="rtl"] .bi-arrow-right,
+[dir="rtl"] .bi-arrow-right-short,
+[dir="rtl"] .bi-chevron-right {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .link-arrow:hover i {
+  transform: translateX(-4px) scaleX(-1);
+}
+
+[dir="rtl"] .footer-links-list a:hover {
+  transform: translateX(-4px);
+}
+
+/* Floating Badges */
+[dir="rtl"] .floating-badge.badge-top-right {
+  right: auto;
+  left: -20px;
+}
+
+[dir="rtl"] .floating-badge.badge-bottom-left {
+  left: auto;
+  right: -20px;
+}
+
+/* Timeline & Process */
+[dir="rtl"] .process-timeline::before {
+  left: auto;
+  right: 10%;
+}
+
+/* Footer columns */
+[dir="rtl"] .footer-col h4::after {
+  left: auto;
+  right: 0;
+}
+
+/* Forms & Validation */
+[dir="rtl"] .form-control.is-invalid,
+[dir="rtl"] .form-select.is-invalid,
+[dir="rtl"] .form-textarea.is-invalid {
+  background-position: left 14px center;
+}
+
+[dir="rtl"] .switch input:checked + .slider:before {
+  transform: translateX(-24px);
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 24px;
+}
+
+/* Before / After Badges */
+[dir="rtl"] .ba-badge-before {
+  right: auto;
+  left: 20px;
+}
+
+[dir="rtl"] .ba-badge-after {
+  left: auto;
+  right: 20px;
+}

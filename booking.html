@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Service | Apex Plumbing & Pipe Repair</title>
+  <meta name="description" content="Schedule professional plumbing service online. Choose your preferred date, service type, and emergency options with upfront transparent pricing.">
+  <link rel="canonical" href="https://www.apexplumbingpro.com/booking.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.apexplumbingpro.com/booking.html">
+  <meta property="og:title" content="Book a Service | Apex Plumbing & Pipe Repair">
+  <meta property="og:description" content="Schedule professional plumbing service online with upfront transparent pricing.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="site-logo" aria-label="Apex Plumbing Homepage">
+        <div class="logo-icon"><i class="bi bi-wrench-adjustable"></i></div>
+        <span>Apex</span>Plumbing
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+18005557586" class="phone-quicklink" aria-label="Call (800) 555-7586">
+          <i class="bi bi-telephone-fill"></i>
+          <span>(800) 555-7586</span>
+        </a>
+
+        <button class="util-btn theme-toggle-btn" type="button" aria-label="Toggle Dark Mode" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <button class="util-btn rtl-toggle-btn" type="button" aria-label="Switch text direction" title="Toggle RTL">
+          RTL
+        </button>
+
+        <a href="booking.html" class="btn btn-accent btn-sm active">Book a Service</a>
+
+        <button class="mobile-toggle" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Menu">
+    <div class="drawer-header">
+      <a href="index.html" class="site-logo">
+        <div class="logo-icon"><i class="bi bi-wrench-adjustable"></i></div>
+        <span>Apex</span>Plumbing
+      </a>
+      <button class="drawer-close" type="button" aria-label="Close Navigation Menu"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+    <div class="drawer-actions">
+      <a href="tel:+18005557586" class="btn btn-outline">
+        <i class="bi bi-telephone-fill"></i> (800) 555-7586
+      </a>
+      <a href="booking.html" class="btn btn-accent">
+        <i class="bi bi-calendar2-check"></i> Book a Service
+      </a>
+      <div class="drawer-toggles">
+        <button class="btn btn-outline btn-sm theme-toggle-btn" type="button">
+          <i class="bi bi-moon-stars-fill"></i> Theme Mode
+        </button>
+        <button class="btn btn-outline btn-sm rtl-toggle-btn" type="button">
+          RTL Mode
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT CONTAINER: EXACTLY 4 MAJOR SECTIONS -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         BOOKING: SECTION 1 — BOOKING HERO
+         ======================================================================= -->
+    <section class="hero-home-1" aria-labelledby="booking-hero-title">
+      <div class="container">
+        <div class="section-header text-center" style="max-width: 750px; margin-bottom: 0;">
+          <div class="eyebrow"><i class="bi bi-calendar-check"></i> HASSLE-FREE SCHEDULING</div>
+          <h1 id="booking-hero-title">Book a Plumbing Service</h1>
+          <p class="lead">
+            Select your service needs and convenient arrival window below. Our certified master plumbers arrive punctually with fully equipped mobile units to solve your plumbing problem quickly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         BOOKING: SECTION 2 — BOOKING FORM (Fully Validated, Formspree/Netlify Ready)
+         ======================================================================= -->
+    <section class="section-padding" style="background-color: var(--surface-bg);" aria-labelledby="form-heading">
+      <div class="container container-narrow">
+        <div class="form-card">
+          <h2 id="form-heading" class="section-title" style="font-size: 1.65rem; margin-bottom: 24px; text-align: center;">
+            Service Appointment Request
+          </h2>
+
+          <!-- Success Alert Banner (Populated via JS upon valid submission) -->
+          <div class="form-alert-success" id="bookingSuccessAlert" role="alert">
+            <i class="bi bi-check-circle-fill"></i>
+            <div class="success-text">
+              Booking Request Received! Our dispatch team will call you within 15 minutes to confirm technician arrival.
+            </div>
+          </div>
+
+          <!--
+            Ready for Formspree / Netlify Forms:
+            To connect with Formspree, set: action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+            To connect with Netlify, add: data-netlify="true" name="plumbing-booking"
+          -->
+          <form id="bookingForm" name="plumbingBooking" method="POST" novalidate>
+            
+            <!-- Emergency Toggle Option -->
+            <div class="emergency-toggle-box">
+              <div class="switch-label">
+                <i class="bi bi-exclamation-octagon-fill"></i>
+                <div>
+                  <strong>Is this an active plumbing emergency?</strong>
+                  <div style="font-size: 0.8125rem; font-weight: normal; color: var(--text-muted);">
+                    Flag for immediate rapid squad dispatch (< 45 min)
+                  </div>
+                </div>
+              </div>
+              <label class="switch" for="emergencyToggle" aria-label="Toggle emergency priority">
+                <input type="checkbox" id="emergencyToggle" name="is_emergency">
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <!-- Two-Column Fields Grid -->
+            <div class="form-row">
+              
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. (555) 019-2834" required>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. sarah@example.com" required>
+              </div>
+
+              <!-- Service Type -->
+              <div class="form-group">
+                <label for="serviceType" class="form-label">Service Type <span class="req">*</span></label>
+                <select id="serviceType" name="serviceType" class="form-select" required>
+                  <option value="" disabled selected>Select service needed</option>
+                  <option value="pipe-repair">Pipe Repair / Pinhole Leaks</option>
+                  <option value="drain-cleaning">Drain Cleaning / Hydro-Jetting</option>
+                  <option value="bathroom-fitting">Bathroom Fixture Fitting</option>
+                  <option value="water-heater">Water Heater Installation / Repair</option>
+                  <option value="emergency-plumbing">Emergency Burst Pipe Repair</option>
+                  <option value="other">Other Plumbing Inspection</option>
+                </select>
+              </div>
+
+              <!-- Preferred Date -->
+              <div class="form-group">
+                <label for="preferredDate" class="form-label">Preferred Date <span class="req">*</span></label>
+                <input type="date" id="preferredDate" name="preferredDate" class="form-control" required>
+              </div>
+
+              <!-- Preferred Time Window -->
+              <div class="form-group">
+                <label for="preferredTime" class="form-label">Preferred Time Window <span class="req">*</span></label>
+                <select id="preferredTime" name="preferredTime" class="form-select" required>
+                  <option value="" disabled selected>Select arrival window</option>
+                  <option value="morning">Morning (08:00 AM - 12:00 PM)</option>
+                  <option value="afternoon">Afternoon (12:00 PM - 04:00 PM)</option>
+                  <option value="evening">Evening (04:00 PM - 08:00 PM)</option>
+                  <option value="immediate">Immediate / ASAP Emergency</option>
+                </select>
+              </div>
+
+              <!-- Property Type -->
+              <div class="form-group">
+                <label for="propertyType" class="form-label">Property Type <span class="req">*</span></label>
+                <select id="propertyType" name="propertyType" class="form-select" required>
+                  <option value="" disabled selected>Select property type</option>
+                  <option value="single-family">Single Family Home</option>
+                  <option value="apartment-condo">Apartment / Condo</option>
+                  <option value="commercial">Commercial / Office Building</option>
+                  <option value="restaurant">Restaurant / Hospitality</option>
+                  <option value="property-management">Managed Multi-Family Property</option>
+                </select>
+              </div>
+
+              <!-- Street Address & City -->
+              <div class="form-group">
+                <label for="address" class="form-label">Service Address <span class="req">*</span></label>
+                <input type="text" id="address" name="address" class="form-control" placeholder="Street, City, Postal Code" required>
+              </div>
+
+              <!-- Problem Description -->
+              <div class="form-group full-width">
+                <label for="description" class="form-label">Problem Description <span class="req">*</span></label>
+                <textarea id="description" name="description" class="form-textarea" placeholder="Please describe the plumbing issue in detail (e.g. water leaking under sink, low shower pressure, backed-up drain, age of heater...)" required></textarea>
+              </div>
+
+            </div>
+
+            <!-- Submit CTA Button -->
+            <div style="text-align: center; margin-top: 12px;">
+              <button type="submit" class="btn btn-accent btn-lg" style="width: 100%; max-width: 380px;">
+                <i class="bi bi-send-fill"></i> Request Service
+              </button>
+              <p style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 12px;">
+                <i class="bi bi-lock-fill"></i> Your personal details are 100% private and protected.
+              </p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         BOOKING: SECTION 3 — EMERGENCY CONTACT
+         ======================================================================= -->
+    <section class="service-area-section section-padding-sm" aria-labelledby="urgent-call-title">
+      <div class="container">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;">
+          <div>
+            <div class="badge-emergency mb-2">
+              <span class="pulse-dot"></span> 24/7 ACTIVE DISPATCH
+            </div>
+            <h2 id="urgent-call-title" style="margin-bottom: 6px;">Need Immediate Help?</h2>
+            <p style="color: #CBD5E1; margin: 0;">
+              If water is actively flooding or spraying, call our priority hotline right now for direct master plumber assistance.
+            </p>
+          </div>
+          <div class="btn-group">
+            <a href="tel:+18005557586" class="btn btn-accent btn-lg">
+              <i class="bi bi-telephone-fill"></i> Call (800) 555-7586
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         BOOKING: SECTION 4 — TRUST MESSAGE
+         ======================================================================= -->
+    <section class="section-padding-sm" style="background-color: var(--surface-alt);" aria-labelledby="guarantee-title">
+      <div class="container text-center">
+        <div class="section-header text-center" style="margin-bottom: 24px;">
+          <h2 id="guarantee-title" style="font-size: 1.45rem; color: var(--primary);">Our Service Guarantee & Commitment</h2>
+          <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted);">
+            Every job is backed by our 100% Workmanship Guarantee. If you are not completely satisfied with our repair or installation, our master plumbers will make it right at no extra charge.
+          </p>
+        </div>
+        <div class="trust-indicators-row">
+          <div class="trust-indicator-item"><i class="bi bi-shield-check"></i> Licensed, Bonded & Insured</div>
+          <div class="trust-indicator-item"><i class="bi bi-receipt"></i> Upfront Itemized Pricing</div>
+          <div class="trust-indicator-item"><i class="bi bi-clock-history"></i> On-Time Arrival Guarantee</div>
+          <div class="trust-indicator-item"><i class="bi bi-stars"></i> Clean Bootie & Drop-Cloth Standard</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="site-logo" style="color: var(--white);">
+            <div class="logo-icon"><i class="bi bi-wrench-adjustable"></i></div>
+            <span>Apex</span>Plumbing
+          </a>
+          <p>Your trusted local master plumbers providing fast, dependable plumbing, pipe repair, and emergency services.</p>
+          <div class="badge-trust"><i class="bi bi-shield-check" style="color: var(--accent);"></i> Licensed, Bonded & Insured</div>
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Apex Plumbing on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Apex Plumbing on X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Apex Plumbing on Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+            <li><a href="booking.html"><i class="bi bi-chevron-right"></i> Book a Service</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Pipe Repair</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Bathroom Fitting</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Drain Cleaning</a></li>
+            <li><a href="service-details.html"><i class="bi bi-chevron-right"></i> Water Heater Installation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div><strong>Emergency 24/7 Line:</strong><br><a href="tel:+18005557586">(800) 555-7586</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div><strong>Email:</strong><br><a href="mailto:service@apexplumbingpro.com">service@apexplumbingpro.com</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div><strong>Main Service Depot:</strong><br>742 Evergreen Terrace, Metro City, CA</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <div><strong>Hours:</strong> Mon - Sun: 24/7 Available</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <div>&copy; <span class="current-year">2026</span> Apex Plumbing & Pipe Repair Service. All Rights Reserved.</div>
+          <div class="footer-legal-links">
+            <a href="coming-soon.html">Privacy Policy</a>
+            <a href="coming-soon.html">Terms of Service</a>
+            <a href="coming-soon.html">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <div class="mobile-call-bar">
+    <div class="mobile-call-bar-inner">
+      <a href="tel:+18005557586" class="btn btn-primary"><i class="bi bi-telephone-fill"></i> Call Now</a>
+      <a href="booking.html" class="btn btn-accent"><i class="bi bi-calendar2-check"></i> Book Online</a>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

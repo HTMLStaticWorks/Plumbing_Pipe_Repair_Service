@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | Apex Plumbing & Pipe Repair</title>
+  <meta name="description" content="We are launching our new premium plumbing service portal soon. Stay tuned for seamless 24/7 dispatch, online booking, and expert pipe repair.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Simple Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container" style="justify-content: space-between;">
+      <a href="index.html" class="site-logo" aria-label="Apex Plumbing Homepage">
+        <div class="logo-icon"><i class="bi bi-wrench-adjustable"></i></div>
+        <span>Apex</span>Plumbing
+      </a>
+
+      <div class="header-actions">
+        <button class="util-btn theme-toggle-btn" type="button" aria-label="Toggle Dark Mode" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="util-btn rtl-toggle-btn" type="button" aria-label="Toggle RTL" title="Toggle RTL">
+          RTL
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="coming-soon-wrapper" style="flex: 1;">
+    <div class="container text-center" style="max-width: 680px;">
+      <div class="eyebrow" style="margin-bottom: 20px;">
+        <i class="bi bi-rocket-takeoff-fill"></i> UNDER CONSTRUCTION
+      </div>
+      <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 20px;">
+        Something Great Is in the Pipeline
+      </h1>
+      <p style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 36px;">
+        We’re expanding our local plumbing depot and upgrading our online customer platform to deliver even faster dispatch and instant service scheduling.
+      </p>
+
+      <!-- Email Notification Form -->
+      <div class="form-card" style="padding: 24px; margin-bottom: 40px;">
+        <div class="form-alert-success" id="newsletterSuccessAlert" role="alert">
+          <i class="bi bi-check-circle-fill"></i>
+          <div class="success-text">Thank you! You’ll be notified as soon as we launch.</div>
+        </div>
+
+        <form id="newsletterForm" novalidate style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <div style="flex: 1; min-width: 240px;">
+            <input type="email" class="form-control" placeholder="Enter your email for launch updates" required aria-label="Email address for launch notification">
+          </div>
+          <button type="submit" class="btn btn-accent">
+            <i class="bi bi-bell-fill"></i> Notify Me
+          </button>
+        </form>
+      </div>
+
+      <!-- Urgent Contact Details -->
+      <div style="margin-bottom: 32px; background: var(--surface-subtle); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+        <p style="font-weight: 600; color: var(--primary); margin-bottom: 6px;">Need emergency plumbing right now?</p>
+        <p style="margin-bottom: 12px; font-size: 0.9375rem; color: var(--text-muted);">Our 24/7 on-call dispatch line remains fully active.</p>
+        <a href="tel:+18005557586" class="btn btn-primary btn-sm">
+          <i class="bi bi-telephone-fill"></i> (800) 555-7586
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div style="display: flex; justify-content: center; gap: 16px;">
+        <a href="https://facebook.com" class="util-btn" aria-label="Visit Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="https://twitter.com" class="util-btn" aria-label="Visit Twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com" class="util-btn" aria-label="Visit LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a href="https://instagram.com" class="util-btn" aria-label="Visit Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" style="padding-top: 24px;">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none;">
+        <div class="footer-bottom-inner" style="justify-content: center; text-align: center; flex-direction: column; gap: 12px;">
+          <div>&copy; <span class="current-year">2026</span> Apex Plumbing & Pipe Repair Service. All Rights Reserved.</div>
+          <div class="footer-socials" style="margin-top: 0; justify-content: center;">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Apex Plumbing on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Apex Plumbing on X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Apex Plumbing on Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+/* ==========================================================================
+   Apex Plumbing - Dark Mode Stylesheet
+   Applied when [data-theme="dark"] is set on <html> or <body>
+   ========================================================================== */
+
+[data-theme="dark"] {
+  /* Surface Overrides */
+  --surface-bg: #07131F;
+  --surface-card: #0D1E30;
+  --surface-alt: #091726;
+  --surface-subtle: #12253A;
+  
+  /* Text Overrides */
+  --text-main: #F1F5F9;
+  --text-muted: #94A3B8;
+  --text-light: #64748B;
+  
+  /* Border Overrides */
+  --border-color: #1E3853;
+  --border-light: #162E47;
+  
+  /* Brand Variations for Dark Mode */
+  --primary: #F8FAFC;
+  --primary-light: #162E47;
+  --primary-dark: #050E17;
+  
+  /* Shadow adjustments */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+/* Header Adjustments */
+[data-theme="dark"] .site-header {
+  background-color: rgba(7, 19, 31, 0.92);
+  border-bottom-color: #1E3853;
+}
+
+[data-theme="dark"] .site-header.scrolled {
+  background-color: rgba(7, 19, 31, 0.98);
+}
+
+[data-theme="dark"] .site-logo {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .logo-icon {
+  background: #12253A;
+  color: #FFFFFF;
+  border: 1px solid #1E3853;
+}
+
+[data-theme="dark"] .nav-link {
+  color: #CBD5E1;
+}
+
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+  color: var(--accent);
+}
+
+[data-theme="dark"] .phone-quicklink {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .util-btn,
+[data-theme="dark"] .mobile-toggle {
+  background: #0D1E30;
+  border-color: #1E3853;
+  color: #F1F5F9;
+}
+
+/* Mobile Drawer in Dark Mode */
+[data-theme="dark"] .mobile-drawer {
+  background-color: #07131F;
+}
+
+[data-theme="dark"] .drawer-close {
+  background: #12253A;
+  color: #F1F5F9;
+}
+
+[data-theme="dark"] .mobile-nav-link {
+  color: #F1F5F9;
+}
+
+[data-theme="dark"] .mobile-nav-link:hover,
+[data-theme="dark"] .mobile-nav-link.active {
+  background-color: rgba(242, 140, 40, 0.15);
+  color: var(--accent);
+}
+
+/* Hero Section */
+[data-theme="dark"] .hero-home-1 {
+  background: linear-gradient(135deg, #07131F 0%, #0D1E30 100%);
+}
+
+[data-theme="dark"] .hero-content h1 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .floating-badge {
+  background: rgba(13, 30, 48, 0.95);
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .floating-badge .badge-text h6 {
+  color: #FFFFFF;
+}
+
+/* Cards & Sections */
+[data-theme="dark"] .service-card {
+  background: #0D1E30;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .service-card h3 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .link-arrow {
+  color: #FFA74D;
+}
+
+[data-theme="dark"] .why-choose-section {
+  background-color: #091726;
+}
+
+[data-theme="dark"] .benefit-text h4 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .stat-card {
+  background: #0D1E30;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .stat-label {
+  color: #CBD5E1;
+}
+
+[data-theme="dark"] .process-card {
+  background: #0D1E30;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .process-card h3 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .process-num-badge {
+  background: #162E47;
+  border-color: #0D1E30;
+}
+
+[data-theme="dark"] .cta-conversion-section {
+  background: #07131F;
+}
+
+[data-theme="dark"] .cta-box-card {
+  background: #0D1E30;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .cta-box-card h2 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .trust-indicator-item {
+  color: #E2E8F0;
+}
+
+/* Home 2 Dark Overrides */
+[data-theme="dark"] .hero-home-2 {
+  background: #07131F;
+}
+
+[data-theme="dark"] .hero-home-2 h1 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .dark-trust-card {
+  background: #091726;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .testimonial-card {
+  background: #0D1E30;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .testimonial-quote {
+  color: #E2E8F0;
+}
+
+[data-theme="dark"] .author-meta h5 {
+  color: #FFFFFF;
+}
+
+/* Form Controls in Dark Mode */
+[data-theme="dark"] .form-card {
+  background: #0D1E30;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .form-label {
+  color: #F1F5F9;
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .form-textarea {
+  background-color: #07131F;
+  border-color: #1E3853;
+  color: #F1F5F9;
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus,
+[data-theme="dark"] .form-textarea:focus {
+  border-color: var(--accent);
+  background-color: #091726;
+}
+
+[data-theme="dark"] .emergency-toggle-box {
+  background: #091726;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .switch-label {
+  color: #F1F5F9;
+}
+
+[data-theme="dark"] .slider {
+  background-color: #1E3853;
+}
+
+/* Contact Cards in Dark Mode */
+[data-theme="dark"] .contact-card {
+  background: #0D1E30;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .contact-card h4 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .emergency-phone-box h3,
+[data-theme="dark"] .emergency-phone-box p {
+  color: #07131F; /* Dark text for the light background gradient */
+}
+
+[data-theme="dark"] .dark-trust-section h2,
+[data-theme="dark"] .dark-trust-section .section-lead {
+  color: #07131F; /* Dark text for the light primary background */
+}
+
+[data-theme="dark"] .back-to-top {
+  background-color: var(--primary-light); /* #162E47 in dark mode */
+  border-color: var(--primary-light);
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .back-to-top:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .btn-outline {
+  color: #FFFFFF;
+  border-color: #1E3853;
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  background-color: #12253A;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  background-color: #E05822;
+  border-color: #E05822;
+  color: #FFFFFF;
+}
+
+/* Dark mode map styling */
+[data-theme="dark"] .map-container iframe {
+  filter: invert(90%) hue-rotate(180deg) contrast(1.2) brightness(0.9);
+}
