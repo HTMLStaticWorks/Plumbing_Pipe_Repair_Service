@@ -63,9 +63,9 @@
 }
 
 /* Timeline & Process */
-[dir="rtl"] .process-timeline::before {
-  left: auto;
-  right: 10%;
+
+[dir="rtl"] .author-meta {
+  text-align: right;
 }
 
 /* Footer columns */
